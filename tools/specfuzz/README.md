@@ -45,7 +45,7 @@ make install_tools     # installs analyzer to /usr/bin, patches + rebuilds
 
 # make install_tools rebuilds honggfuzz IN PLACE at $HONGG_SRC — it
 # does not reinstall the binary to /usr/bin. Point PATH at it:
-export PATH="/root/honggfuzz:$PATH"
+export PATH="/root/honggfuzz/src:$PATH"
 which honggfuzz && honggfuzz --version   # sanity check it's the patched build
 
 # scripts/run_specfuzz.sh calls `llvm-7.0.1-config`, but this

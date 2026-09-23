@@ -55,8 +55,26 @@ RUN git clone https://github.com/google/honggfuzz.git && \
 # ============================================================
 RUN git clone https://github.com/OleksiiOleksenko/SpecFuzz.git /specfuzz
 WORKDIR /specfuzz
-# User builds SpecFuzz after container starts:
-#   mkdir build && cd build
-#   cmake .. -DLLVM_DIR=/usr/local/lib/cmake/llvm
-#   make -j$(nproc)
+# ============================================================
+# Build + install SpecFuzz itself, baked into the image so no
+# manual setup is needed after `docker run` (matches the
+# "One-time setup inside the container" steps documented in
+# tools/specfuzz/README.md -- kept here as the source of truth
+# for what a fresh container needs).
+# ============================================================
+ENV HONGG_SRC=/root/honggfuzz/src
+RUN make && \
+    make install && \
+    make install_tools
+# make install_tools rebuilds honggfuzz IN PLACE at $HONGG_SRC rather
+# than reinstalling the binary to /usr/bin -- put it on PATH:
+ENV PATH="/root/honggfuzz:${PATH}"
+RUN which honggfuzz && honggfuzz --version
+# scripts/run_specfuzz.sh calls `llvm-7.0.1-config`, but this
+# from-source LLVM install only produces unsuffixed `llvm-config`:
+RUN ln -sf /usr/local/bin/llvm-config /usr/local/bin/llvm-7.0.1-config
+# Sanity checks -- fail the build here rather than at `docker run` time
+# if any of the above didn't actually work:
+RUN clang-sf --version && analyzer --help && llvm-7.0.1-config --version
+WORKDIR /artifact
 CMD ["/bin/bash"]

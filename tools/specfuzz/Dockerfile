@@ -46,9 +46,16 @@ ENV PATH="/usr/local/bin:${PATH}"
 RUN llvm-config --version && clang --version
 # ============================================================
 # Install honggfuzz
+#
+# Cloned into a `src/` subdirectory specifically -- SpecFuzz's own
+# Makefile (install_tools -> patch_hongg) copies patched files into
+# $(HONGG_SRC)/libhfuzz/..., $(HONGG_SRC)/linux/..., etc., and its
+# own docs use HONGG_SRC=.../src/ for exactly this reason. Cloning
+# straight to /root/honggfuzz (repo root, no src/ subfolder) would
+# make HONGG_SRC point at a path that doesn't contain those files.
 # ============================================================
-RUN git clone https://github.com/google/honggfuzz.git && \
-    cd honggfuzz && \
+RUN git clone https://github.com/google/honggfuzz.git /root/honggfuzz/src && \
+    cd /root/honggfuzz/src && \
     make && make install
 # ============================================================
 # Clone SpecFuzz
@@ -66,9 +73,11 @@ ENV HONGG_SRC=/root/honggfuzz/src
 RUN make && \
     make install && \
     make install_tools
-# make install_tools rebuilds honggfuzz IN PLACE at $HONGG_SRC rather
-# than reinstalling the binary to /usr/bin -- put it on PATH:
-ENV PATH="/root/honggfuzz:${PATH}"
+# make install_tools patches + rebuilds honggfuzz IN PLACE at
+# $HONGG_SRC rather than reinstalling the binary elsewhere -- the
+# patched build (not whatever `make install` above put on PATH) is
+# the one SpecFuzz's fuzzing loop actually needs, so put it first:
+ENV PATH="/root/honggfuzz/src:${PATH}"
 RUN which honggfuzz && honggfuzz --version
 # scripts/run_specfuzz.sh calls `llvm-7.0.1-config`, but this
 # from-source LLVM install only produces unsuffixed `llvm-config`:

@@ -1,7 +1,7 @@
 # SoK:Evaluation of Automated Detection Tools for Speculative Constant-Time Vulnerabilities Artifact
 
 This repository benchmarks five Spectre detection tools —
-**SpecFuzz**, **KleeSpectre**, **Binsec/Haunted**, **Pitchfork**, and
+**SpecFuzz**, **KleeSpectre**, **BinSec/Haunted**, **Pitchfork**, and
 **LMTest** — against a shared suite of binaries covering Spectre v1
 (PHT) and Spectre v4 (STL) gadgets, a compiler/optimization-level
 sweep, and constant-time crypto primitives (libsodium's secretbox,
@@ -79,25 +79,20 @@ cd tools/pitchfork   && ./setup.sh                          && cd ../..
 cd tools/lmtest      && ./setup.sh                          && cd ../..
 ```
 
-**2. Run each tool.** The three Docker-based tools do NOT run their
-scripts from your normal host shell — `run_specfuzz.sh` /
-`run_kleespectre.sh` / `run_binsec.sh` only work from *inside* the
-container's own shell, since that's the only place the tool binary
-(`klee`, SpecFuzz's `clang-sf`, Binsec/Haunted) actually exists. Running them
-directly on the host (e.g. `./scripts/run_kleespectre.sh` typed into
-your normal terminal) will fail with `command not found` — that is
-not a bug, it means you're in the wrong shell. Each command below
-gets you into the right one first:
+**2. Run each tool.** BinSec does NOT run its script from your
+normal host shell — `run_binsec.sh` only works from *inside* the
+container's own shell, since that's the only place the BinSec binary
+actually exists. Running it directly on the host will fail with
+`command not found` — that is not a bug, it means you're in the wrong
+shell. SpecFuzz and KleeSpectre are single commands from the host
+(no manual shell needed — their setup is baked into the Docker image):
 
 ```bash
 # --- SpecFuzz (Docker) ---
-docker run --rm -it -v "$(pwd)":/artifact specfuzz bash
-#   ^ now inside the container. Build+install SpecFuzz itself once
-#   per tools/specfuzz/README.md, then, still inside the container:
-/artifact/scripts/run_specfuzz.sh
+docker run --rm -it -v "$(pwd)":/artifact -w /artifact specfuzz \
+    ./scripts/run_specfuzz.sh
 
 # --- KleeSpectre (Docker) ---
-# This one is a single command from the HOST -- no manual shell needed:
 docker run --rm -it -v "$(pwd)":/artifact -w /artifact kleespectre \
     ./scripts/run_kleespectre.sh
 

@@ -1,7 +1,7 @@
 # SoK:Evaluation of Automated Detection Tools for Speculative Constant-Time Vulnerabilities Artifact
 
 This repository benchmarks five Spectre detection tools —
-**SpecFuzz**, **KleeSpectre**, **BinSec/Haunted**, **Pitchfork**, and
+**SpecFuzz**, **KleeSpectre**, **Binsec/Haunted**, **Pitchfork**, and
 **LMTest** — against a shared suite of binaries covering Spectre v1
 (PHT) and Spectre v4 (STL) gadgets, a compiler/optimization-level
 sweep, and constant-time crypto primitives (libsodium's secretbox,
@@ -83,7 +83,7 @@ cd tools/lmtest      && ./setup.sh                          && cd ../..
 scripts from your normal host shell — `run_specfuzz.sh` /
 `run_kleespectre.sh` / `run_binsec.sh` only work from *inside* the
 container's own shell, since that's the only place the tool binary
-(`klee`, SpecFuzz's `clang-sf`, BinSec) actually exists. Running them
+(`klee`, SpecFuzz's `clang-sf`, Binsec/Haunted) actually exists. Running them
 directly on the host (e.g. `./scripts/run_kleespectre.sh` typed into
 your normal terminal) will fail with `command not found` — that is
 not a bug, it means you're in the wrong shell. Each command below

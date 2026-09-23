@@ -70,22 +70,56 @@ against the files in this repo.
 #    Binsec's per-module directories (safe to re-run).
 ./sync_sources.sh
 
-# 1. Each tool is built and run independently — see the
-#    per-tool README linked above for the exact commands. In short:
+# 1. Build/set up each tool — see the per-tool README linked above
+#    for details. In short:
 cd tools/specfuzz    && docker build -t specfuzz .        && cd ../..
 cd tools/kleespectre && docker build -t kleespectre .      && cd ../..
 cd tools/binsec      && ./download.sh && docker load -i binsec-haunted.tar && cd ../..
 cd tools/pitchfork   && ./setup.sh                          && cd ../..
 cd tools/lmtest      && ./setup.sh                          && cd ../..
-
-# 2. Run each tool (bind-mounting the artifact root into the Docker
-#    tools; activating the venv for the Python tools). See each
-#    tools/<name>/README.md for the exact invocation — it differs per
-#    tool (working directory, container mount point, venv activation).
-./scripts/run_specfuzz.sh
-./scripts/run_kleespectre.sh
-./scripts/binsec/run_binsec.sh && ./scripts/binsec/collect_results.sh
-./scripts/run_pitchfork.py
-./scripts/run_lmtest.sh
 ```
 
+**2. Run each tool.** The three Docker-based tools do NOT run their
+scripts from your normal host shell — `run_specfuzz.sh` /
+`run_kleespectre.sh` / `run_binsec.sh` only work from *inside* the
+container's own shell, since that's the only place the tool binary
+(`klee`, SpecFuzz's `clang-sf`, BinSec) actually exists. Running them
+directly on the host (e.g. `./scripts/run_kleespectre.sh` typed into
+your normal terminal) will fail with `command not found` — that is
+not a bug, it means you're in the wrong shell. Each command below
+gets you into the right one first:
+
+```bash
+# --- SpecFuzz (Docker) ---
+docker run --rm -it -v "$(pwd)":/artifact specfuzz bash
+#   ^ now inside the container. Build+install SpecFuzz itself once
+#   per tools/specfuzz/README.md, then, still inside the container:
+/artifact/scripts/run_specfuzz.sh
+
+# --- KleeSpectre (Docker) ---
+# This one is a single command from the HOST -- no manual shell needed:
+docker run --rm -it -v "$(pwd)":/artifact -w /artifact kleespectre \
+    ./scripts/run_kleespectre.sh
+
+# --- BinSec/Haunted (Docker) ---
+docker run --rm -it -v "$(pwd)":/artifact -w /artifact/scripts/binsec \
+    <image-name-from-docker-images> bash
+#   ^ now inside the container, in scripts/binsec/:
+./run_binsec.sh
+exit
+# back on the host:
+./scripts/binsec/collect_results.sh
+
+# --- Pitchfork (host, pypy3 venv -- NOT Docker) ---
+source tools/pitchfork/pitchfork/venv/bin/activate
+PYTHONPATH=tools/pitchfork/pitchfork pypy3 scripts/run_pitchfork.py --auto
+
+# --- LMTest (host, python venv -- NOT Docker, NOT run from artifact root) ---
+cd tools/lmtest/leakage-model-testing
+source ../venv/bin/activate
+../../../scripts/run_lmtest.sh
+cd ../../..
+```
+
+See each `tools/<name>/README.md` for full detail — the above is the
+exact, tested invocation for each tool, not a simplified version.

@@ -31,13 +31,6 @@ make install          # installs clang-sf / clang-sf++ to /usr/bin
 make install_tools     # installs analyzer to /usr/bin, patches + rebuilds
                         # honggfuzz in-place at $HONGG_SRC
 
-# NOTE: the Dockerfile's own trailing comment suggests instead
-#   mkdir build && cd build && cmake .. -DLLVM_DIR=/usr/local/lib/cmake/llvm && make
-# That's a different build path than upstream's top-level Makefile above.
-# Try the `make` sequence first (it's what SpecFuzz's own README/Makefile
-# document); fall back to the cmake comment only if `make install_tools`
-# doesn't work for you.
-
 # 2. make install_tools rebuilds honggfuzz IN PLACE at $HONGG_SRC — it
 # does not reinstall the binary to /usr/bin. Point PATH at it (or symlink):
 export PATH="/root/honggfuzz:$PATH"
@@ -49,7 +42,6 @@ which honggfuzz && honggfuzz --version   # sanity check it's the patched build
 # (no version suffix). Symlink it so the script finds it:
 ln -sf /usr/local/bin/llvm-config /usr/local/bin/llvm-7.0.1-config
 
-# sanity checks
 clang-sf --version
 analyzer --help
 llvm-7.0.1-config --version

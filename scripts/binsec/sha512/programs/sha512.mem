@@ -1,0 +1,30 @@
+# Setting esp
+esp<32>:=0xffffcabc;
+ebp<32>:=0x00000000;
+
+# init mem at in (input message, 32 bytes)
+@[0x081b43dc,32] from_file;
+
+# init mem at out (output digest, 64 bytes) — concrete, zeroed
+@[0x081b4dd0,4] := 0x00000000;
+@[0x081b4dd4,4] := 0x00000000;
+@[0x081b4dd8,4] := 0x00000000;
+@[0x081b4ddc,4] := 0x00000000;
+@[0x081b4de0,4] := 0x00000000;
+@[0x081b4de4,4] := 0x00000000;
+@[0x081b4de8,4] := 0x00000000;
+@[0x081b4dec,4] := 0x00000000;
+@[0x081b4df0,4] := 0x00000000;
+@[0x081b4df4,4] := 0x00000000;
+@[0x081b4df8,4] := 0x00000000;
+@[0x081b4dfc,4] := 0x00000000;
+@[0x081b4e00,4] := 0x00000000;
+@[0x081b4e04,4] := 0x00000000;
+@[0x081b4e08,4] := 0x00000000;
+@[0x081b4e0c,4] := 0x00000000;
+
+# Setting gs
+gs_base<32>:=0xf7f00000;
+
+# Canary — now symbolic instead of fixed, to test the false-positive theory
+@[0x00000014 + gs_base<32>,4] := 0x00000000;

@@ -1,0 +1,519 @@
+test,violations,paths,addresses,spec,misforwarding,guided,trace,filename,wall_time,Running time,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400bac,True,False,False,False,spectrev1 --case case_1.spec.O0,4.15116075100377,0.67543405800825,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400c24,True,False,False,False,spectrev1 --case case_2.spec.O0,4.30138386203907,0.803267490991857,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400ca4,True,False,False,False,spectrev1 --case case_3.spec.O0,4.21021273196675,0.773743889003526,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400d07,True,False,False,False,spectrev1 --case case_4.spec.O0,4.0940550310188,0.648573830025271,
+spectrev1 --case case_5,1,NA,Instruction Address 0x400d73,True,False,False,False,spectrev1 --case case_5.spec.O0,4.3392116180039,0.90642159699928,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400df3,True,False,False,False,spectrev1 --case case_6.spec.O0,4.35596067196457,0.811575531028211,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400e4c,True,False,False,False,spectrev1 --case case_7.spec.O0,4.23134079901502,0.865241413004696,
+spectrev1 --case case_8,1,NA,Instruction Address 0x400ed6,True,False,False,False,spectrev1 --case case_8.spec.O0,4.16043501801323,0.864638656959869,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400f29,True,False,False,False,spectrev1 --case case_9.spec.O0,4.06354192295112,0.666956214990933,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400f82,True,False,False,False,spectrev1 --case case_10.spec.O0,4.18696413299767,0.75578864099225,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x40107a,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,4.44386623398168,0.997199645964429,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x401170,True,False,False,False,spectrev1 --case case_11ker.spec.O0,4.36677447502734,1.06692564499099,
+spectrev1 --case case_11sub,2,NA,"Instruction Address 0x401294,Instruction Address 0x4012d9",True,False,False,False,spectrev1 --case case_11sub.spec.O0,4.68200247798814,1.41551900905324,
+spectrev1 --case case_12,1,NA,Instruction Address 0x401328,True,False,False,False,spectrev1 --case case_12.spec.O0,4.17611978203058,0.822753779008053,
+spectrev1 --case case_13,1,NA,Instruction Address 0x4013a1,True,False,False,False,spectrev1 --case case_13.spec.O0,4.58712839300279,1.02504755702103,
+spectrev1 --case case_14,1,NA,Instruction Address 0x401417,True,False,False,False,spectrev1 --case case_14.spec.O0,4.14035443699686,0.794259955990128,
+tea ,0,NA,,True,False,False,False,tea .spec.O0,15.6129045269918,12.1334672700032,
+tea ,timeout,NA,NA,True,True,False,False,tea .spec.misforwarding.O0,3600,NA,
+spectrev4 --case case_1,3,NA,"Instruction Address 0x400bbe,Instruction Address 0x400bc6,Instruction Address 0x400bdd",True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,755.067425830988,751.36582928896,
+spectrev4 --case case_2,1,NA,Instruction Address 0x400c2c,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,17.4687746090349,13.7551402089885,
+spectrev4 --case case_3,1,NA,Instruction Address 0x400c7c,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,16.727878292033,12.8357312610024,
+spectrev4 --case case_4,1,NA,Instruction Address 0x400cd9,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,53.9141691729892,50.0247950589983,
+spectrev4 --case case_5,1,NA,Instruction Address 0x400d4a,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,58.1676915579592,54.5593810310238,
+spectrev4 --case case_6,1,NA,Instruction Address 0x400dbc,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,56.6317635599989,52.7002190480125,
+spectrev4 --case case_7,1,NA,Instruction Address 0x400e1a,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,24.3767058419762,20.8860564409988,
+spectrev4 --case case_8,1,NA,Instruction Address 0x400e75,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,15.4132976140245,11.6499425259535,
+spectrev4 --case case_10,2,NA,"Instruction Address 0x40100b,Instruction Address 0x401019",True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,341.318057027005,337.563286265009,
+spectrev4 --case case_11,1,NA,Instruction Address 0x401090,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,522.742230108008,518.885857774003,
+spectrev4 --case case_12,2,NA,"Instruction Address 0x4010db,Instruction Address 0x4010e9",True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,335.170533809986,331.526986398036,
+spectrev4 --case case_13,1,NA,Instruction Address 0x401130,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,536.489838626992,532.743497482035,
+spectrev4 --case case_9_bis,timeout,NA,NA,True,True,False,False,spectrev4 --case case_9_bis.spec.misforwarding.O0,3600,NA,
+secretbox ,1,NA,Instruction Address 0x467204,True,False,False,False,secretbox .spec.O0,6.67004414397525,5.40245406900067,
+secretbox ,0,NA,,True,False,False,False,secretbox .spec.O0,2.30543177603977,0.77610952896066,
+secretbox ,0,NA,,True,False,False,False,secretbox .spec.O0,1.95638274599332,0.640438533038832,
+secretbox ,0,NA,,True,False,False,False,secretbox .spec.O0,3.62911964900559,2.28623101097764,
+secretbox ,0,NA,,True,False,False,False,secretbox .spec.O0,6.46690285700606,5.176667763968,
+secretbox ,0,NA,,True,False,False,False,secretbox .spec.O0,1.96030897297896,0.638684264966287,
+secretbox ,1,NA,Instruction Address 0x467204,True,False,False,False,secretbox .spec.O0,6.82275460101664,5.55681014899164,
+poly1305 ,0,NA,,True,False,False,False,poly1305 .spec.O0,19.2182634799974,12.9180240569985,
+tea_O0,0,NA,,True,False,False,False,tea .spec.O0,4.73436115799996,3.63542949300609,
+tea _O1,0,NA,,True,False,False,False,tea .spec.O0,2.17215487599606,1.12828250799794,
+tea_O2,0,NA,,True,False,False,False,tea .spec.O0,2.18847042300331,1.12427669799945,
+tea_O3,0,NA,,True,False,False,False,tea .spec.O0,2.14885450599832,1.14303297799779,
+tea_fast,0,NA,,True,False,False,False,tea .spec.O0,2.19445700899814,1.14883466099855,
+tea_fast,0,NA,,True,True,False,False,tea .spec.misforwarding.O0,14.7861399070098,13.7475093620014,
+Tea_01,0,NA,,True,True,False,False,tea .spec.misforwarding.O0,14.7667765149963,13.7053567080002,
+tea_O2,0,NA,,True,True,False,False,tea .spec.misforwarding.O0,14.6805491899868,13.6137234529888,
+tea_O3,0,NA,,True,True,False,False,tea .spec.misforwarding.O0,15.0455689999944,14.00259610801,
+GCC_O0,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400ba3,True,False,False,False,spectrev1 --case case_1.spec.O0,1.29970169800799,0.26269993497408,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400bd3,True,False,False,False,spectrev1 --case case_2.spec.O0,0.777401537983678,0.256080538005335,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400c3a,True,False,False,False,spectrev1 --case case_3.spec.O0,0.767336716991849,0.226606544980314,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400cc2,True,False,False,False,spectrev1 --case case_4.spec.O0,0.732667753007263,0.198566045990447,
+spectrev1 --case case_5,1,NA,Instruction Address 0x400d1c,True,False,False,False,spectrev1 --case case_5.spec.O0,0.616015228995821,0.185764028981794,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400d82,True,False,False,False,spectrev1 --case case_6.spec.O0,0.630273760005366,0.152054714009864,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400dce,True,False,False,False,spectrev1 --case case_7.spec.O0,0.82106311401003,0.18749195500277,11.1973884760228
+spectrev1 --case case_8,1,NA,Instruction Address 0x400e37,True,False,False,False,spectrev1 --case case_8.spec.O0,0.664984756993363,0.151983074989403,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400e81,True,False,False,False,spectrev1 --case case_9.spec.O0,0.665273766993778,0.136818812025012,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400ec5,True,False,False,False,spectrev1 --case case_10.spec.O0,0.619178259017644,0.249733569973614,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x40101c,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.650591179000912,0.155583306972403,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x401096,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.644964956998592,0.169638504972681,
+spectrev1 --case case_11sub,2,NA,"Instruction Address 0x401118,Instruction Address 0x401109",True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.61778201701236,0.184016736020567,
+spectrev1 --case case_12,1,NA,Instruction Address 0x401170,True,False,False,False,spectrev1 --case case_12.spec.O0,0.529811175016221,0.192600022011902,
+spectrev1 --case case_13,1,NA,Instruction Address 0x4011d4,True,False,False,False,spectrev1 --case case_13.spec.O0,0.639844920980977,0.224927119008498,
+spectrev1 --case case_14,1,NA,Instruction Address 0x401232,True,False,False,False,spectrev1 --case case_14.spec.O0,0.520497635006905,0.151463472022442,
+GCC_O1,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400bb6,True,False,False,False,spectrev1 --case case_1.spec.O0,1.27249664501869,0.232093058002647,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400bea,True,False,False,False,spectrev1 --case case_2.spec.O0,0.690342489018803,0.149376993009355,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400b85,True,False,False,False,spectrev1 --case case_3.spec.O0,0.7142415419803,0.141748020978412,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400c3f,True,False,False,False,spectrev1 --case case_4.spec.O0,0.662453504017321,0.103293184016366,
+spectrev1 --case case_5,1,NA,Instruction Address 0x400c77,True,False,False,False,spectrev1 --case case_5.spec.O0,0.656646348972572,0.141171890019905,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400cbd,True,False,False,False,spectrev1 --case case_6.spec.O0,0.607408879994182,0.104598901991267,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400d01,True,False,False,False,spectrev1 --case case_7.spec.O0,0.649785404006252,0.136572012008401,
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.23923096200451,0.797880679980153,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400d6d,True,False,False,False,spectrev1 --case case_9.spec.O0,0.494792250014143,0.151837073994102,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400d8c,True,False,False,False,spectrev1 --case case_10.spec.O0,0.569410710013472,0.1247490849928,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x400dcc,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.454040534008527,0.0994056279887445,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x400e11,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.489560427988181,0.187585921026766,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x400e43,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.44058332502027,0.106516030005878,
+spectrev1 --case case_12,1,NA,Instruction Address 0x400e78,True,False,False,False,spectrev1 --case case_12.spec.O0,0.501187207002658,0.0981991100125015,10.260845749086
+spectrev1 --case case_13,1,NA,Instruction Address 0x400eaa,True,False,False,False,spectrev1 --case case_13.spec.O0,0.441561143001309,0.151174405007623,
+spectrev1 --case case_14,1,NA,Instruction Address 0x400ee8,True,False,False,False,spectrev1 --case case_14.spec.O0,0.377104377024807,0.104802029003622,
+GCC_O2,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400e1e,True,False,False,False,spectrev1 --case case_1.spec.O0,1.24477763901814,0.218199129012646,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400e1e,True,False,False,False,spectrev1 --case case_2.spec.O0,0.713290589977987,0.140120646014111,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400de8,True,False,False,False,spectrev1 --case case_3.spec.O0,0.832695168995997,0.164835233008489,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400f6d,True,False,False,False,spectrev1 --case case_4.spec.O0,0.614013307989808,0.111204676999478,
+spectrev1 --case case_5,1,NA,Instruction Address 0x400e5c,True,False,False,False,spectrev1 --case case_5.spec.O0,0.632500845997129,0.131902616005391,
+spectrev1 --case case_6,0,NA,,True,False,False,False,spectrev1 --case case_6.spec.O0,1.23447822598973,0.741766537015792,11.286152435001
+spectrev1 --case case_7,1,NA,Instruction Address 0x400ff7,True,False,False,False,spectrev1 --case case_7.spec.O0,0.544515569985379,0.201013057987439,
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.20185539798695,0.784949744993355,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400e1e,True,False,False,False,spectrev1 --case case_9.spec.O0,0.582142416009447,0.159411884989822,
+spectrev1 --case case_10,1,NA,Instruction Address 0x401094,True,False,False,False,spectrev1 --case case_10.spec.O0,0.506879085005494,0.112833507999312,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x400e89,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.54019961800077,0.102150438993704,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x400ece,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.573785584012512,0.101546489022439,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x401127,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.520509725989541,0.146875041013118,
+spectrev1 --case case_12,1,NA,Instruction Address 0x40116a,True,False,False,False,spectrev1 --case case_12.spec.O0,0.478016903012758,0.115997739019804,
+spectrev1 --case case_13,1,NA,Instruction Address 0x400e1e,True,False,False,False,spectrev1 --case case_13.spec.O0,0.56325725701754,0.10289257299155,
+spectrev1 --case case_14,1,NA,Instruction Address 0x4011d3,True,False,False,False,spectrev1 --case case_14.spec.O0,0.503235100011807,0.163812807004433,
+GCC_O3,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x4010d7,True,False,False,False,spectrev1 --case case_1.spec.O0,1.23761061197729,0.23460278098355,
+spectrev1 --case case_2,1,NA,Instruction Address 0x401117,True,False,False,False,spectrev1 --case case_2.spec.O0,0.735505381016992,0.199749299004907,
+spectrev1 --case case_3,1,NA,Instruction Address 0x401068,True,False,False,False,spectrev1 --case case_3.spec.O0,0.779324481991353,0.186432299000444,
+spectrev1 --case case_4,1,NA,Instruction Address 0x40117d,True,False,False,False,spectrev1 --case case_4.spec.O0,0.640328520006733,0.114170875982381,
+spectrev1 --case case_5,1,NA,Instruction Address 0x4011ca,True,False,False,False,spectrev1 --case case_5.spec.O0,0.619461360998685,0.127000570995733,
+spectrev1 --case case_6,0,NA,,True,False,False,False,spectrev1 --case case_6.spec.O0,1.22473229200114,0.722047286981251,
+spectrev1 --case case_7,1,NA,Instruction Address 0x401497,True,False,False,False,spectrev1 --case case_7.spec.O0,0.604340065998258,0.23299438302638,11.2706518169725
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.1296545759833,0.719580578996101,
+spectrev1 --case case_9,1,NA,Instruction Address 0x401529,True,False,False,False,spectrev1 --case case_9.spec.O0,0.57996942801401,0.178865252004471,
+spectrev1 --case case_10,1,NA,Instruction Address 0x401554,True,False,False,False,spectrev1 --case case_10.spec.O0,0.541409989004023,0.129506444005528,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x4015a2,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.494888587010792,0.0898747559986077,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x4015f7,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.553348905988969,0.114708303008229,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x401637,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.629955734999385,0.160797923977952,
+spectrev1 --case case_12,1,NA,Instruction Address 0x40167a,True,False,False,False,spectrev1 --case case_12.spec.O0,0.497279080009321,0.109288898995146,
+spectrev1 --case case_13,1,NA,Instruction Address 0x4016b7,True,False,False,False,spectrev1 --case case_13.spec.O0,0.521959984995192,0.104611803981243,
+spectrev1 --case case_14,1,NA,Instruction Address 0x401703,True,False,False,False,spectrev1 --case case_14.spec.O0,0.4808828169771,0.165202036994742,
+GCC_Ofast,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x4010f7,True,False,False,False,spectrev1 --case case_1.spec.O0,1.24405427099555,0.197217988985358,
+spectrev1 --case case_2,1,NA,Instruction Address 0x401137,True,False,False,False,spectrev1 --case case_2.spec.O0,0.629017486004159,0.123641332000261,
+spectrev1 --case case_3,1,NA,Instruction Address 0x401088,True,False,False,False,spectrev1 --case case_3.spec.O0,0.841999974974897,0.176041614002315,
+spectrev1 --case case_4,1,NA,Instruction Address 0x40119d,True,False,False,False,spectrev1 --case case_4.spec.O0,0.665183078992413,0.137864261982031,
+spectrev1 --case case_5,1,NA,Instruction Address 0x4011ea,True,False,False,False,spectrev1 --case case_5.spec.O0,0.603995381010463,0.116108863003319,
+spectrev1 --case case_6,0,NA,,True,False,False,False,spectrev1 --case case_6.spec.O0,1.25258699597907,0.727647420018911,
+spectrev1 --case case_7,1,NA,Instruction Address 0x4014b7,True,False,False,False,spectrev1 --case case_7.spec.O0,0.608841294015292,0.24992114098859,11.5978873830172
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.35997037499328,0.779115274985088,
+spectrev1 --case case_9,1,NA,Instruction Address 0x401549,True,False,False,False,spectrev1 --case case_9.spec.O0,0.651361716998508,0.122700259991689,
+spectrev1 --case case_10,1,NA,Instruction Address 0x401574,True,False,False,False,spectrev1 --case case_10.spec.O0,0.568532735022018,0.196149221010273,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x4015c2,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.529490930988686,0.10829020300298,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x401617,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.559614201018121,0.109473565011285,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x401657,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.555986810999457,0.10245585499797,
+spectrev1 --case case_12,1,NA,Instruction Address 0x40169a,True,False,False,False,spectrev1 --case case_12.spec.O0,0.528617269010283,0.174646202998701,
+spectrev1 --case case_13,1,NA,Instruction Address 0x4016d7,True,False,False,False,spectrev1 --case case_13.spec.O0,0.50887294500717,0.137613728002179,
+spectrev1 --case case_14,1,NA,Instruction Address 0x401723,True,False,False,False,spectrev1 --case case_14.spec.O0,0.489761917007854,0.0964182240131777,
+Clang_O0,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400bac,True,False,False,False,spectrev1 --case case_1.spec.O0,1.27414633400622,0.232923704985296,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400c24,True,False,False,False,spectrev1 --case case_2.spec.O0,0.709445827989839,0.162784968997585,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400ca4,True,False,False,False,spectrev1 --case case_3.spec.O0,0.844969635974849,0.214561064989539,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400d07,True,False,False,False,spectrev1 --case case_4.spec.O0,0.601535349996993,0.12457997398451,
+spectrev1 --case case_5,1,NA,Instruction Address 0x400d73,True,False,False,False,spectrev1 --case case_5.spec.O0,0.700137044012081,0.158298003982054,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400df3,True,False,False,False,spectrev1 --case case_6.spec.O0,0.686620161985047,0.152844048017869,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400e4c,True,False,False,False,spectrev1 --case case_7.spec.O0,0.655235840007663,0.159108880005078,10.5680727469735
+spectrev1 --case case_8,1,NA,Instruction Address 0x400ed6,True,False,False,False,spectrev1 --case case_8.spec.O0,0.627364170999499,0.240932659973623,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400f29,True,False,False,False,spectrev1 --case case_9.spec.O0,0.47026657499373,0.109802376013249,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400f82,True,False,False,False,spectrev1 --case case_10.spec.O0,0.572510514990427,0.127759594994131,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x40107a,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.628579868993256,0.173579092981527,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x401170,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.595704319013748,0.258109716000035,
+spectrev1 --case case_11sub,2,NA,"Instruction Address 0x401294,Instruction Address 0x4012d9",True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.615390110993758,0.274525089014787,
+spectrev1 --case case_12,1,NA,Instruction Address 0x401328,True,False,False,False,spectrev1 --case case_12.spec.O0,0.534360574994935,0.129914796998492,
+spectrev1 --case case_13,1,NA,Instruction Address 0x4013a1,True,False,False,False,spectrev1 --case case_13.spec.O0,0.57699292502366,0.21865931598586,
+spectrev1 --case case_14,1,NA,Instruction Address 0x401417,True,False,False,False,spectrev1 --case case_14.spec.O0,0.474813492997782,0.151024087012047,
+Clang_O1,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400b94,True,False,False,False,spectrev1 --case case_1.spec.O0,1.26078835397493,0.194317694986239,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400bd6,True,False,False,False,spectrev1 --case case_2.spec.O0,0.727639040007489,0.153673666005489,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400c16,True,False,False,False,spectrev1 --case case_3.spec.O0,0.668076420988655,0.122521499026334,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400c4b,True,False,False,False,spectrev1 --case case_4.spec.O0,0.686667539004702,0.0911865799862426,
+spectrev1 --case case_5,1,NA,Instruction Address 0x400c7b,True,False,False,False,spectrev1 --case case_5.spec.O0,0.734718361025443,0.184487893013284,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400cae,True,False,False,False,spectrev1 --case case_6.spec.O0,0.555005044006975,0.102888409979641,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400cde,True,False,False,False,spectrev1 --case case_7.spec.O0,0.71943015299621,0.142938675999176,
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.37825617700582,0.830326258001151,10.8710735779896
+spectrev1 --case case_9,1,NA,Instruction Address 0x400d44,True,False,False,False,spectrev1 --case case_9.spec.O0,0.520539686986012,0.15088979198481,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400d70,True,False,False,False,spectrev1 --case case_10.spec.O0,0.592043113982072,0.150503426993964,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x400dc6,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.530106116988463,0.102113450004254,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x400e27,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.545305633975659,0.100404834985966,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x400e67,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.52903397398768,0.176691767002922,
+spectrev1 --case case_12,1,NA,Instruction Address 0x400e87,True,False,False,False,spectrev1 --case case_12.spec.O0,0.449498863017652,0.0987270649929997,
+spectrev1 --case case_13,1,NA,Instruction Address 0x400eb4,True,False,False,False,spectrev1 --case case_13.spec.O0,0.486908534017857,0.109852474008221,
+spectrev1 --case case_14,1,NA,Instruction Address 0x400ef0,True,False,False,False,spectrev1 --case case_14.spec.O0,0.487056566023966,0.154701526014833,
+Clang_O2,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400b94,True,False,False,False,spectrev1 --case case_1.spec.O0,1.26044165698113,0.215453629993135,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400bc4,True,False,False,False,spectrev1 --case case_2.spec.O0,0.666263855993748,0.113191657990683,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400c06,True,False,False,False,spectrev1 --case case_3.spec.O0,0.756040170992492,0.15694643300958,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400c3b,True,False,False,False,spectrev1 --case case_4.spec.O0,0.627750512998318,0.0958517869876232,
+spectrev1 --case case_5,2,NA,"Instruction Address 0x400c76,Instruction Address 0x400c9b",True,False,False,False,spectrev1 --case case_5.spec.O0,0.754943488020217,0.250062531995354,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400cee,True,False,False,False,spectrev1 --case case_6.spec.O0,0.524721870984649,0.106889688991942,10.5301301920554
+spectrev1 --case case_7,1,NA,Instruction Address 0x400d1e,True,False,False,False,spectrev1 --case case_7.spec.O0,0.767475892993389,0.133201329997974,
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.31142055901,0.811740375997033,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400d84,True,False,False,False,spectrev1 --case case_9.spec.O0,0.473366128018824,0.148238902998855,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400db0,True,False,False,False,spectrev1 --case case_10.spec.O0,0.529262535012094,0.113764990994241,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x400dda,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.524004980019527,0.0883199149975553,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x400e14,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.528121975017712,0.0852272660122253,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x400e44,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.495102857996244,0.157019088015659,
+spectrev1 --case case_12,1,NA,Instruction Address 0x400e77,True,False,False,False,spectrev1 --case case_12.spec.O0,0.436244140000781,0.108326793997549,
+spectrev1 --case case_13,1,NA,Instruction Address 0x400ea4,True,False,False,False,spectrev1 --case case_13.spec.O0,0.457319834007649,0.101470339985099,
+spectrev1 --case case_14,1,NA,Instruction Address 0x400ee0,True,False,False,False,spectrev1 --case case_14.spec.O0,0.417649734008592,0.143634417996509,
+Clang_O3,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400b94,True,False,False,False,spectrev1 --case case_1.spec.O0,1.25254173501162,0.204037708987016,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400bc4,True,False,False,False,spectrev1 --case case_2.spec.O0,0.644652615010273,0.126638054003706,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400c06,True,False,False,False,spectrev1 --case case_3.spec.O0,0.740431009995518,0.123455099004786,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400c3b,True,False,False,False,spectrev1 --case case_4.spec.O0,0.64108396100346,0.100931685999967,
+spectrev1 --case case_5,2,NA,"Instruction Address 0x400c76,Instruction Address 0x400c9b",True,False,False,False,spectrev1 --case case_5.spec.O0,0.835119534982368,0.226006962009706,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400cee,True,False,False,False,spectrev1 --case case_6.spec.O0,0.553218956978526,0.105666905001272,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400d1e,True,False,False,False,spectrev1 --case case_7.spec.O0,0.678177024004981,0.134101211006055,
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.24956807601848,0.816677190014161,10.6270370489801
+spectrev1 --case case_9,1,NA,Instruction Address 0x400d84,True,False,False,False,spectrev1 --case case_9.spec.O0,0.431931995990453,0.0834404990018811,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400db0,True,False,False,False,spectrev1 --case case_10.spec.O0,0.568430828978308,0.117091105988948,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x400dda,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.549858398007927,0.100385158002609,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x400e14,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.549558116006665,0.110135280003306,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x400e44,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.510044165013824,0.172895166004309,
+spectrev1 --case case_12,1,NA,Instruction Address 0x400e77,True,False,False,False,spectrev1 --case case_12.spec.O0,0.443551420001313,0.116923609020887,
+spectrev1 --case case_13,1,NA,Instruction Address 0x400ea4,True,False,False,False,spectrev1 --case case_13.spec.O0,0.502856907987734,0.113719267013948,
+spectrev1 --case case_14,1,NA,Instruction Address 0x400ee0,True,False,False,False,spectrev1 --case case_14.spec.O0,0.476012303988682,0.16066601901548,
+Clang_Ofast,,,,,,,,,,,
+spectrev1 --case case_1,1,NA,Instruction Address 0x400bb4,True,False,False,False,spectrev1 --case case_1.spec.O0,1.30437232801341,0.221245405002264,
+spectrev1 --case case_2,1,NA,Instruction Address 0x400be4,True,False,False,False,spectrev1 --case case_2.spec.O0,0.703683625004487,0.173522693978157,
+spectrev1 --case case_3,1,NA,Instruction Address 0x400c26,True,False,False,False,spectrev1 --case case_3.spec.O0,0.753811802016571,0.16674073698232,
+spectrev1 --case case_4,1,NA,Instruction Address 0x400c5b,True,False,False,False,spectrev1 --case case_4.spec.O0,0.665020198997809,0.121226376999402,
+spectrev1 --case case_5,2,NA,"Instruction Address 0x400c96,Instruction Address 0x400cbb",True,False,False,False,spectrev1 --case case_5.spec.O0,0.68769449199317,0.226253102999181,
+spectrev1 --case case_6,1,NA,Instruction Address 0x400d0e,True,False,False,False,spectrev1 --case case_6.spec.O0,0.601592263003113,0.106113425979856,
+spectrev1 --case case_7,1,NA,Instruction Address 0x400d3e,True,False,False,False,spectrev1 --case case_7.spec.O0,0.65141977899475,0.13296557898866,11.1587750270555
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.31649041801575,0.878096206986811,
+spectrev1 --case case_9,1,NA,Instruction Address 0x400da4,True,False,False,False,spectrev1 --case case_9.spec.O0,0.547223012021277,0.150097297999309,
+spectrev1 --case case_10,1,NA,Instruction Address 0x400dd0,True,False,False,False,spectrev1 --case case_10.spec.O0,0.52933605099679,0.102417307993164,
+spectrev1 --case case_11gcc,1,NA,Instruction Address 0x400dfa,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,0.542890393990092,0.100528372975532,
+spectrev1 --case case_11ker,1,NA,Instruction Address 0x400e34,True,False,False,False,spectrev1 --case case_11ker.spec.O0,0.536183321004501,0.0990443440095987,
+spectrev1 --case case_11sub,1,NA,Instruction Address 0x400e64,True,False,False,False,spectrev1 --case case_11sub.spec.O0,0.660766009998042,0.160777036013315,
+spectrev1 --case case_12,1,NA,Instruction Address 0x400e97,True,False,False,False,spectrev1 --case case_12.spec.O0,0.513460017013131,0.104935114999535,
+spectrev1 --case case_13,1,NA,Instruction Address 0x400ec4,True,False,False,False,spectrev1 --case case_13.spec.O0,0.559339606988942,0.100537917023757,
+spectrev1 --case case_14,1,NA,Instruction Address 0x400f00,True,False,False,False,spectrev1 --case case_14.spec.O0,0.585491709003691,0.114010027988115,
+GCC_O0,,,,,,,,,,,
+spectrev4 --case case_1,2,NA,"Instruction Address 0x400ba4,Instruction Address 0x400bae",True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,39.41226907901,38.291607599007,
+spectrev4 --case case_2,1,NA,Instruction Address 0x400c17,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,5.19044933500118,4.13104183098767,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,3.1988329020096,2.14207578697824,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,3.74257380099152,2.69634803402005,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,8.63545348099433,7.59662562000449,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,8.81280137700378,7.76525452701026,
+spectrev4 --case case_7,1,NA,Instruction Address 0x400dd8,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,7.40544493900961,6.37581909599248,
+spectrev4 --case case_8,1,NA,Instruction Address 0x400e2a,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,4.50392356602242,3.43695934599964,
+spectrev4 --case case_10,2,NA,"Instruction Address 0x400f7f,Instruction Address 0x400f93",True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,62.1621610590082,61.1420104709978,
+spectrev4 --case case_11,1,NA,Instruction Address 0x400fff,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,100.046472210001,98.9911818540131,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,30.7226380200009,29.5853348689852,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,44.9951958799793,43.8620318199974,
+GCC_O1,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,1.27942370899837,0.16048368398333,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,1.97681167401606,0.910438833001535,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,2.0001645150187,0.90798309398815,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,1.23222876500222,0.15104319297825,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,2.00571115800994,0.939872282993747,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,1.97703091500443,0.919263960997341,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,1.99442940001609,0.926145058998372,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,1.14091628501774,0.0880357710120734,
+spectrev4 --case case_9_bis,failed,NA,,True,True,False,False,spectrev4 --case case_9_bis.spec.misforwarding.O0,NA,NA,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,4.00022556699696,1.27393244800624,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,3.79459972499171,2.17729810901801,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,2.86939020498539,1.20777157798875,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,3.77291936401161,2.18151082700933,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,1.19271208302234,0.14891706398339,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,1.96399695501896,0.92076814599568,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,1.90942033601459,0.881378367019352,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,1.19027313400875,0.151269083988154,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,2.03208683800767,0.947827241005143,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,1.99933818099089,0.908884414006025,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,1.99884406200727,0.934110718022566,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,1.11958048600354,0.0883184910053387,
+spectrev4 --case case_9,failed,NA,,True,True,False,False,spectrev4 --case case_9.spec.misforwarding.O0,NA,NA,
+spectrev4 --case case_9_bis,failed,NA,,True,True,False,False,spectrev4 --case case_9_bis.spec.misforwarding.O0,NA,NA,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,3.1209712990094,1.39185873800307,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,2.78780248301337,1.20126150001306,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,2.88520888600033,1.36010602599708,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,2.14263071300229,0.850581437000074,
+GCC_O3,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,1.22857701801695,0.166670732985949,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,1.93091014598031,0.867972045001807,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,1.96520580700599,0.894001149019459,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,1.16706570700626,0.139383760018973,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,1.98180293597397,0.921176121017197,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,2.00787561800098,0.941626432992052,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,1.9718678080244,0.935428336000769,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,1.11234677201719,0.0857634599960875,
+spectrev4 --case case_9,failed,NA,,True,True,False,False,spectrev4 --case case_9.spec.misforwarding.O0,NA,NA,
+spectrev4 --case case_9_bis,failed,NA,,True,True,False,False,spectrev4 --case case_9_bis.spec.misforwarding.O0,NA,NA,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,4.03540303898626,1.44073445801041,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,2.91313583700685,1.32387839400326,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,3.10390636601369,1.33972315301071,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,2.93266757798847,1.31238937299349,
+Clang_O0,,,,,,,,,,,
+spectrev4 --case case_1,3,NA,"Instruction Address 0x400bbe,Instruction Address 0x400bc6,Instruction Address 0x400bdd",True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,691.48566763202,688.088071225997,
+spectrev4 --case case_2,1,NA,Instruction Address 0x400c2c,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,15.2568978529889,12.0315540320007,
+spectrev4 --case case_3,1,NA,Instruction Address 0x400c7c,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,15.7246863030014,12.3851127840171,
+spectrev4 --case case_4,1,NA,Instruction Address 0x400cd9,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,53.3487991910079,49.6367174200132,
+spectrev4 --case case_5,1,NA,Instruction Address 0x400d4a,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,60.1407695160015,56.5889093800215,
+spectrev4 --case case_6,1,NA,Instruction Address 0x400dbc,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,60.5141529949906,56.4902938790037,
+spectrev4 --case case_7,1,NA,Instruction Address 0x400e1a,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,24.7160491220129,20.5133184250153,
+spectrev4 --case case_8,1,NA,Instruction Address 0x400e75,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,13.6167938040162,10.4155155810004,
+spectrev4 --case case_10,2,NA,"Instruction Address 0x40100b,Instruction Address 0x401019",True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,312.662610133993,309.274729719007,
+spectrev4 --case case_11,1,NA,Instruction Address 0x401090,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,491.276308653003,487.758854768006,
+spectrev4 --case case_12,2,NA,"Instruction Address 0x4010db,Instruction Address 0x4010e9",True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,328.509542388987,324.982328558981,
+spectrev4 --case case_13,1,NA,Instruction Address 0x401130,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,509.884520963999,506.325987288001,
+Clang_O1,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,4.09162705400377,0.495314729021629,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,6.10896816701279,2.52381859198795,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,6.07801685601589,2.80400453499169,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,4.08327974600252,0.489524734002771,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,6.31239946500864,2.79348312600632,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,6.31394899499719,2.71481108700391,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,6.07814057200449,2.80044167701271,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,3.69616452598711,0.254753012006404,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,8.91368452800089,5.59882116998779,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,7.82750839198707,4.53016085299896,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,8.933040214004,5.59310727199772,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,7.83563289200538,4.57869362799102,
+Clang_O2,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,3.741081294982,0.449896579986671,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,5.78303007400245,2.4862576550222,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,5.74931252800161,2.46498929298832,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,4.10215023500496,0.491369695984758,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,6.71949993900489,2.93600955497823,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,7.52365148399258,3.41504844700103,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,7.03652228898136,2.85661759698996,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,4.24543635000009,0.405071360990405,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,6.24666866799817,2.49049953199574,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,5.85831621300895,2.59498910600087,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,6.28644316800637,2.91204622498481,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,6.56346617700183,2.93340944699594,
+Clang_O3,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,4.00741031297366,0.532062743994175,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,6.58581700999639,3.09958529702271,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,6.79249812601483,2.63242468298995,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,4.02130611101165,0.432498278998537,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,6.45260388401221,3.05977386501036,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,6.55493647998082,2.98376882498269,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,6.33409380400553,2.89558709200355,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,3.70325088899699,0.259744705021149,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,6.06517535098828,2.56845066801179,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,6.18951832299354,2.61278468099772,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,6.86541451900848,2.89295293600298,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,6.73693682299927,2.95504726699437,
+Clang_Ofast,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,3.70800757899997,0.416905211983249,
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,6.16149943001801,2.74329177499749,
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,5.93175888500991,2.52965246600797,
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,3.83504965601605,0.464868907991331,
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,6.04125621300773,2.66877653601114,
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,5.95702589600114,2.65817707398674,
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,6.01950670900987,2.60085872001946,
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,3.76220725200255,0.390819753985852,
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,6.04511390900007,2.60930490997271,
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,5.8470709999965,2.49124784598825,
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,5.78828133299248,2.40637516399147,
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,5.81603453701246,2.42199771001469,
+GCC_Ofast,,,,,,,,,,,
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,4.450201364990789,0.5208003310253844
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,7.026848951005377,3.0076644659857266
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,6.982161523017567,3.0307830540114082
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,4.319736550009111,0.47898566399817355
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,6.606113735004328,2.9296117440098897
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,6.36221122299321,2.894963334023487
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,6.523927701986395,2.888672762986971
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,3.6820769409823697,0.28449121399899013
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,6.936772298999131,3.0282747150049545
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,5.814770900004078,2.488607545994455
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,6.1013948199979495,2.771935757016763
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,5.832315576000838,2.404784070997266
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.402591552992817,0.30681698500120547
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.14219785601017065,0.05093726399354637
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.3983145499951206,0.30659841900342144
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.412656923988834,0.3168064450001111
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.5169796529953601,0.4261895119998371
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.26646402300684713,0.1756762920122128
+test1 ,1,NA,Instruction Address 0x401151,True,False,False,False,test1 .spec.O0,0.15200908698898274,0.054968710988759995
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.4112031050026417,0.3133735779993003
+test1 ,1,NA,Instruction Address 0x401151,True,False,False,False,test1 .spec.O0,0.14355697999417316,0.05284294000011869
+test1 ,1,NA,Instruction Address 0x401151,True,False,False,False,test1 .spec.O0,0.14158863299235236,0.0532342480000807
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.39565584700903855,0.3051476139953593
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.5164728859963361,0.42607847999897785
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.26878948298690375,0.177426383990678
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.2604107740044128,0.17176390999520663
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,1,NA,Instruction Address 0x401151,True,False,False,False,test1 .spec.O0,0.13964073998795357,0.05126586499682162
+test1 ,1,NA,Instruction Address 0x401151,True,False,False,False,test1 .spec.O0,0.3263229160074843,0.23659932900045533
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.4104011639865348,0.314462636000826
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.3995694639888825,0.305822984999395
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.20815565799421165,0.1153606879961444
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.2725915420014644,0.1750821530004032
+test1 ,1,NA,Instruction Address 0x401151,True,False,False,False,test1 .spec.O0,0.13632464299735148,0.043584760001976974
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.14811748699867167,0.05450949599617161
+test1 ,1,NA,Instruction Address 0x4004aa,True,False,False,False,test1 .spec.O0,0.11340372898848727,0.046431655006017536
+spectrev4 --case case_1,0,NA,,True,False,False,False,spectrev4 --case case_1.spec.O0,0.33808079099981114,0.06398666099994443
+spectrev4 --case case_2,0,NA,,True,False,False,False,spectrev4 --case case_2.spec.O0,0.5053629750036635,0.2332406959903892
+spectrev4 --case case_3,0,NA,,True,False,False,False,spectrev4 --case case_3.spec.O0,0.5098055400012527,0.2323463780048769
+spectrev4 --case case_4,0,NA,,True,False,False,False,spectrev4 --case case_4.spec.O0,0.3362958939978853,0.06337357001029886
+spectrev4 --case case_5,0,NA,,True,False,False,False,spectrev4 --case case_5.spec.O0,0.5077586130064446,0.23395999599597417
+spectrev4 --case case_6,0,NA,,True,False,False,False,spectrev4 --case case_6.spec.O0,0.5051978749979753,0.23077063300297596
+spectrev4 --case case_7,0,NA,,True,False,False,False,spectrev4 --case case_7.spec.O0,0.5307303510198835,0.23624101601308212
+spectrev4 --case case_8,0,NA,,True,False,False,False,spectrev4 --case case_8.spec.O0,0.3034912529983558,0.031035391002660617
+spectrev4 --case case_10,0,NA,,True,False,False,False,spectrev4 --case case_10.spec.O0,0.5081060829979833,0.23261750899837352
+spectrev4 --case case_11,0,NA,,True,False,False,False,spectrev4 --case case_11.spec.O0,0.6241068530071061,0.2325832289934624
+spectrev4 --case case_12,0,NA,,True,False,False,False,spectrev4 --case case_12.spec.O0,0.5140854119963478,0.23545150601421483
+spectrev4 --case case_13,0,NA,,True,False,False,False,spectrev4 --case case_13.spec.O0,0.51526522700442,0.2343273789738305
+test1 ,0,NA,,True,False,False,False,test1 .spec.O0,0.5397986250172835,0.22605902797658928
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+test1 ,1,NA,Instruction Address 0x401169,True,False,False,False,test1 .spec.O0,0.11665311999968253,0.058970374026102945
+test1 ,failed,NA,,True,False,False,False,test1 .spec.O0,NA,NA
+all ,failed,NA,,False,False,False,False,all .O0,NA,NA
+div_test ,failed,NA,,False,False,False,False,div_test .O0,NA,NA
+div_test ,1,NA,Instruction Address 0x4016e1,True,False,False,False,div_test .spec.O0,1.3281779820026713,0.2116972620060551
+div_test ,1,NA,Instruction Address 0x4016e1,True,False,False,False,div_test .spec.O0,1.3692331079946598,0.219980244000908
+div_test ,1,NA,Instruction Address 0x4016e1,True,False,False,False,div_test .spec.O0,1.281356881998363,0.18970732799789403
+gmeter ,failed,NA,,True,False,False,False,gmeter .spec.O0,NA,NA
+gmeter ,failed,NA,,True,False,False,False,gmeter .spec.O0,NA,NA
+gmeter ,2,NA,"Instruction Address 0x4004c3,Instruction Address 0x4004db",True,False,False,False,gmeter .spec.O0,0.31566947800456546,0.22847634099889547
+spectrev1 ,failed,NA,,True,False,False,False,spectrev1 .spec.O0,NA,NA
+spectrev1 all,failed,NA,,True,False,False,False,spectrev1 all.spec.O0,NA,NA
+spectrev1 --case case_5,0,NA,,True,False,False,False,spectrev1 --case case_5.spec.O0,1.3414624670112971,1.016699897008948
+spectrev1 --case case_4,0,NA,,True,False,False,False,spectrev1 --case case_4.spec.O0,0.5501379380002618,0.22323516101459973
+salsa ,2,NA,"Instruction Address 0x4669e4,Instruction Address 0x466a8d",True,False,False,False,salsa .spec.O0,979.1985809100152,978.8886238810082
+salsa ,failed,NA,,True,True,False,False,salsa .spec.misforwarding.O0,NA,NA
+sha512 ,3,NA,"Instruction Address 0x467c44,Instruction Address 0x467ced,Instruction Address 0x43a1b0",True,False,False,False,sha512 .spec.O0,428.2627700600133,427.94201945199165
+streamxor ,failed,NA,,True,False,False,False,streamxor .spec.O0,NA,NA
+ed25519 ,failed,NA,,True,False,False,False,ed25519 .spec.O0,NA,NA
+ed25519 ,failed,NA,,True,False,False,False,ed25519 .spec.O0,NA,NA
+ed25519 ,failed,NA,,True,True,False,False,ed25519 .spec.misforwarding.O0,NA,NA
+streamxor ,failed,NA,,True,True,False,False,streamxor .spec.misforwarding.O0,NA,NA
+sha512 ,failed,NA,,True,True,False,False,sha512 .spec.misforwarding.O0,NA,NA
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,0.3271666640066542,0.04249556496506557
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,0.538802552036941,0.2684026589849964
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,0.5098557930323295,0.23951094399672002
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,0.30708669003797695,0.03734927100595087
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,0.5289484210079536,0.2555886969785206
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,0.5200558389769867,0.2522887379745953
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,0.5299501399858855,0.25698715896578506
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,0.3038298219908029,0.03065989399328828
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,0.5121770109981298,0.2411099800374359
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,0.7861802710103802,0.5109220589511096
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,0.5125405889702961,0.24218836799263954
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,0.7853270170162432,0.5125116999843158
+spectrev4 --case case_1,2,NA,"Instruction Address 0x400bae,Instruction Address 0x400ba4",True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,30.45304800197482,30.170923697995022
+spectrev4 --case case_2,1,NA,Instruction Address 0x400c17,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,1.8931279529933818,1.6134901709738187
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,1.0189459910034202,0.7404616629937664
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,1.1917809190344997,0.9108708800049499
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,3.9386449480080046,3.652598962013144
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,3.971834341995418,3.694360797991976
+spectrev4 --case case_7,1,NA,Instruction Address 0x400dd8,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,3.1290822970331647,2.8478268870385364
+spectrev4 --case case_8,1,NA,Instruction Address 0x400e2a,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,1.5108930970309302,1.2313348990282975
+spectrev4 --case case_10,2,NA,"Instruction Address 0x400f93,Instruction Address 0x400f7f",True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,39.002176581998356,38.73074299399741
+spectrev4 --case case_11,1,NA,Instruction Address 0x400fff,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,65.96448615199188,65.6867085149861
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,18.097679114958737,17.821195725991856
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,29.624558497976977,29.347755694994703
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,0.3351189860259183,0.04122500499943271
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,0.4932195480214432,0.22274542500963435
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,0.4905420310096815,0.22295540297636762
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,0.30695461900904775,0.03640510601690039
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,0.5061455479590222,0.23652636696351692
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,0.5002646069624461,0.23193549702409655
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,0.5050690390053205,0.2378995570470579
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,0.29865204798989,0.029612304002512246
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,0.49407041002996266,0.2213579470408149
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,0.4961005930090323,0.2253889039857313
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,0.4972344050183892,0.22507927502738312
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,0.4923164609936066,0.22397861699573696
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,0.31665418500779197,0.03604061802616343
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,0.5142499479698017,0.2441705619567074
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,0.5149760459898971,0.24383827904239297
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,0.30434225097997114,0.035846561018843204
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,0.5243746310006827,0.2539473060169257
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,0.5261437069857493,0.2510221599950455
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,0.5222340670297854,0.2523320879554376
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,0.3024362970027141,0.029860145004931837
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,0.9494952970417216,0.680600312014576
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,0.7886441680020653,0.5159228499978781
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,0.9505549810128286,0.6774431949597783
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,0.7876696939929388,0.5143939630361274
+spectrev4 --case case_1,0,NA,,True,True,False,False,spectrev4 --case case_1.spec.misforwarding.O0,0.32020575797650963,0.03686939098406583
+spectrev4 --case case_2,0,NA,,True,True,False,False,spectrev4 --case case_2.spec.misforwarding.O0,0.4979069799883291,0.22306160302832723
+spectrev4 --case case_3,0,NA,,True,True,False,False,spectrev4 --case case_3.spec.misforwarding.O0,0.488894990994595,0.22013897297438234
+spectrev4 --case case_4,0,NA,,True,True,False,False,spectrev4 --case case_4.spec.misforwarding.O0,0.3088654070161283,0.03571299504255876
+spectrev4 --case case_5,0,NA,,True,True,False,False,spectrev4 --case case_5.spec.misforwarding.O0,0.5129103360231966,0.23287070501828566
+spectrev4 --case case_6,0,NA,,True,True,False,False,spectrev4 --case case_6.spec.misforwarding.O0,0.501656889973674,0.2304518130258657
+spectrev4 --case case_7,0,NA,,True,True,False,False,spectrev4 --case case_7.spec.misforwarding.O0,0.5060068890452385,0.23419207899132743
+spectrev4 --case case_8,0,NA,,True,True,False,False,spectrev4 --case case_8.spec.misforwarding.O0,0.2987264880212024,0.029495557013433427
+spectrev4 --case case_10,0,NA,,True,True,False,False,spectrev4 --case case_10.spec.misforwarding.O0,0.4963888179627247,0.2254533219966106
+spectrev4 --case case_11,0,NA,,True,True,False,False,spectrev4 --case case_11.spec.misforwarding.O0,0.49581681098788977,0.2210728739737533
+spectrev4 --case case_12,0,NA,,True,True,False,False,spectrev4 --case case_12.spec.misforwarding.O0,0.504525433992967,0.22925040201516822
+spectrev4 --case case_13,0,NA,,True,True,False,False,spectrev4 --case case_13.spec.misforwarding.O0,0.49334208003710955,0.2221024670288898
+spectrev1 all,failed,NA,,True,False,False,False,spectrev1 all.spec.O0,NA,NA
+spectrev1 --case all,failed,NA,,True,False,False,False,spectrev1 --case all.spec.O0,NA,NA
+spectrev1 --case case1,failed,NA,,True,False,False,False,spectrev1 --case case1.spec.O0,NA,NA
+spectrev1 --case case_1,0,NA,,True,False,False,False,spectrev1 --case case_1.spec.O0,1.8637255979992915,0.8090010250016348
+spectrev1 --case case_2,0,NA,,True,False,False,False,spectrev1 --case case_2.spec.O0,1.749056862994621,0.747586395998951
+spectrev1 --case case_3,0,NA,,True,False,False,False,spectrev1 --case case_3.spec.O0,1.7840974509963416,0.7790169119980419
+spectrev1 --case case_4,0,NA,,True,False,False,False,spectrev1 --case case_4.spec.O0,1.6676007249989198,0.6663683060032781
+spectrev1 --case case_5,0,NA,,True,False,False,False,spectrev1 --case case_5.spec.O0,4.225141178998456,3.1842596209971816
+spectrev1 --case case_6,0,NA,,True,False,False,False,spectrev1 --case case_6.spec.O0,1.9105508940047002,0.7727590419963235
+spectrev1 --case case_7,0,NA,,True,False,False,False,spectrev1 --case case_7.spec.O0,1.828075422999973,0.8143349449965172
+spectrev1 --case case_8,0,NA,,True,False,False,False,spectrev1 --case case_8.spec.O0,1.7918769870011602,0.779840998002328
+spectrev1 --case case_9,0,NA,,True,False,False,False,spectrev1 --case case_9.spec.O0,1.7627049590009847,0.7515100160017028
+spectrev1 --case case_10,0,NA,,True,False,False,False,spectrev1 --case case_10.spec.O0,1.4519139600015478,0.4436053770041326
+spectrev1 --case case_11gcc,0,NA,,True,False,False,False,spectrev1 --case case_11gcc.spec.O0,3.973346403996402,2.9683248180008377
+spectrev1 --case case_11ker,0,NA,,True,False,False,False,spectrev1 --case case_11ker.spec.O0,1.9203046879993053,0.9260269079968566
+spectrev1 --case case_11sub,0,NA,,True,False,False,False,spectrev1 --case case_11sub.spec.O0,4.128829625005892,3.127082557999529
+spectrev1 --case case_12,0,NA,,True,False,False,False,spectrev1 --case case_12.spec.O0,1.8875675500021316,0.8279930869975942
+spectrev1 --case case_13,0,NA,,True,False,False,False,spectrev1 --case case_13.spec.O0,2.4316267690010136,1.4205236790003255
+spectrev1 --case case_14,0,NA,,True,False,False,False,spectrev1 --case case_14.spec.O0,1.8093317469974863,0.792769835999934
+spectrev4 --case case_1,0,NA,,True,False,False,False,spectrev4 --case case_1.spec.O0,1.1734274010013905,0.3088381639972795
+spectrev4 --case case_2,0,NA,,True,False,False,False,spectrev4 --case case_2.spec.O0,1.5713911929997266,0.7163106220032205
+spectrev4 --case case_3,0,NA,,True,False,False,False,spectrev4 --case case_3.spec.O0,1.6203479839969077,0.7662462680018507
+spectrev4 --case case_4,0,NA,,True,False,False,False,spectrev4 --case case_4.spec.O0,1.1502428820022033,0.28149263299565064
+spectrev4 --case case_5,0,NA,,True,False,False,False,spectrev4 --case case_5.spec.O0,1.61708783100039,0.7464880019979319
+spectrev4 --case case_6,0,NA,,True,False,False,False,spectrev4 --case case_6.spec.O0,1.593009614996845,0.7407380790027673
+spectrev4 --case case_7,0,NA,,True,False,False,False,spectrev4 --case case_7.spec.O0,1.5990146249969257,0.721912560002238
+spectrev4 --case case_8,0,NA,,True,False,False,False,spectrev4 --case case_8.spec.O0,1.000904520995391,0.13741330299671972
+spectrev4 --case case_10,0,NA,,True,False,False,False,spectrev4 --case case_10.spec.O0,1.6151066879974678,0.7410853940018569
+spectrev4 --case case_11,0,NA,,True,False,False,False,spectrev4 --case case_11.spec.O0,1.6605260580035974,0.7984188429982169
+spectrev4 --case case_12,0,NA,,True,False,False,False,spectrev4 --case case_12.spec.O0,1.662608620004903,0.7524243150037364
+spectrev4 --case case_13,0,NA,,True,False,False,False,spectrev4 --case case_13.spec.O0,1.6357850330023211,0.7697446110032615
+tea ,0,NA,,True,False,False,False,tea .spec.O0,6.987349779999931,6.108998652001901
+spectrev1 --case case_1,0,NA,,True,False,False,False,spectrev1 --case case_1.spec.O0,1.7353370659984648,0.7366184569982579
+spectrev1 --case case_1,0,NA,,True,True,False,False,spectrev1 --case case_1.spec.misforwarding.O0,7.14909042599902,6.15310702300485
+spectrev1 --case case_2,0,NA,,True,False,False,False,spectrev1 --case case_2.spec.O0,1.764209455002856,0.7773484040008043
+spectrev1 --case case_1,1,NA,Instruction Address 0x400bac,True,False,False,False,spectrev1 --case case_1.spec.O0,1.0541370079954504,0.19129912999778753
+spectrev1 --case case_1,1,NA,Instruction Address 0x400bac,True,True,False,False,spectrev1 --case case_1.spec.misforwarding.O0,1.7717264530001557,0.9152246070007095
+spectrev1 --case case_2,1,NA,Instruction Address 0x400c24,True,False,False,False,spectrev1 --case case_2.spec.O0,1.081814180004585,0.2138053260059678

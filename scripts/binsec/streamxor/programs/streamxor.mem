@@ -1,0 +1,7 @@
+# Setting esp
+esp<32>:=0xffffcabc;
+ebp<32>:=0x00000000;
+
+@[0x081af414, 123] from_file; # message
+@[0x081af3dc,32] from_file; # key
+@[0x081af3fc,24] from_file; # nonce

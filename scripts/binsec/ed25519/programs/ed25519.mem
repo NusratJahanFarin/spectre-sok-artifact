@@ -1,0 +1,6 @@
+# Setting esp
+esp<32>:=0xffffcabc;
+ebp<32>:=0x00000000;
+
+@[0x081bb41c,32] from_file; # message
+@[0x081bb3dc,32] from_file; # key

@@ -1,0 +1,12 @@
+# Fetched/cloned artifacts -- rebuilt or re-downloaded via the READMEs
+# and scripts in this directory, never committed.
+
+binsec/binsec-haunted.tar
+
+pitchfork/pitchfork/
+
+lmtest/venv/
+lmtest/leakage-model-testing/
+
+# A sibling to this dir, referenced by scripts/run_specfuzz.sh
+/libsodium-1.0.18/

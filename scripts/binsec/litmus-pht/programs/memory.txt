@@ -1,0 +1,11 @@
+# Setting esp and ebp
+esp<32>:=0xffffcc18;
+ebp<32>:=0x00000000;
+
+# Initialize idx_is_safe
+@[0x080fd390,1] from_file;
+
+# Initialize last_idx
+@[0x080fd388,8] from_file;
+
+@[0x080fdad4,4] from_file;

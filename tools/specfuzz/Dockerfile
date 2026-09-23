@@ -54,9 +54,33 @@ RUN llvm-config --version && clang --version
 # straight to /root/honggfuzz (repo root, no src/ subfolder) would
 # make HONGG_SRC point at a path that doesn't contain those files.
 # ============================================================
-RUN git clone https://github.com/google/honggfuzz.git /root/honggfuzz/src && \
-    cd /root/honggfuzz/src && \
-    make && make install
+RUN git clone https://github.com/google/honggfuzz.git /root/honggfuzz/src
+# ------------------------------------------------------------
+# linux/bfd.c compatibility patch:
+#
+# Ubuntu 18.04's binutils-dev defines bfd_section_size/_vma/_name as
+# OLD-style 2-argument macros. Several newer functions in honggfuzz's
+# own bfd.c (added for string-extraction/dictionary support) call
+# these names with only 1 argument -- the modern single-arg calling
+# convention from binutils >=2.34 -- so on this older binutils the
+# macro expansion itself fails ("requires 2 arguments, but only 1
+# given"), before ever reaching an "undeclared identifier" fallback.
+# The file's own pre-existing shim (immediately below this insertion
+# point) only handles the *reverse* direction (old names used when
+# only new ones exist) and does nothing here, since the old names
+# are already defined -- just with the wrong arity for these calls.
+# Fix: force-redefine (#undef then #define) the 1-arg forms in terms
+# of the confirmed-working old 2-arg macros (bfd_get_section_size is
+# itself already 1-arg per the existing shim below; bfd_get_section_vma
+# is 2-arg, its first argument historically unused/safe to pass NULL;
+# bfd_section_name has no such alias, so access ->name directly --
+# a long-stable field of struct bfd_section).
+# Using python3 here rather than sed to avoid nested Dockerfile/sed
+# backslash-continuation escaping issues.
+# ------------------------------------------------------------
+RUN python3 -c "import pathlib; p = pathlib.Path('/root/honggfuzz/src/linux/bfd.c'); text = p.read_text(); anchor = '#if !defined(bfd_get_section_vma)'; patch = '#undef bfd_section_size\n#define bfd_section_size(section) bfd_get_section_size(section)\n#undef bfd_section_vma\n#define bfd_section_vma(section) bfd_get_section_vma(NULL, section)\n#undef bfd_section_name\n#define bfd_section_name(section) ((section)->name)\n'; assert anchor in text; text = text.replace(anchor, patch + anchor, 1); p.write_text(text); print('Patched bfd.c OK')" && \
+    grep -c "undef bfd_section" /root/honggfuzz/src/linux/bfd.c
+RUN cd /root/honggfuzz/src && make && make install
 # ============================================================
 # Clone SpecFuzz
 # ============================================================

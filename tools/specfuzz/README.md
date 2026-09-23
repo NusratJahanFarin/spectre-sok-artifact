@@ -13,17 +13,29 @@ cd tools/specfuzz
 docker build -t specfuzz .
 ```
 
-## One-time setup inside the container
+Building SpecFuzz itself (`make && make install && make install_tools`),
+patching honggfuzz, and the `llvm-7.0.1-config` symlink are all baked
+into this Dockerfile now, so the image is self-contained — no manual
+setup step after `docker build` (unlike earlier versions of this
+artifact, which needed the steps below run by hand every time).
 
-Run this once per container (or bake it into the image as extra
-`RUN`/`ENV` lines if you want a fully self-contained image):
+## Run
+
+Single command from the host, same pattern as KleeSpectre:
 
 ```bash
-docker run --rm -it -v "$(pwd)/../..":/artifact specfuzz bash
+docker run --rm -it -v "$(pwd)/../..":/artifact -w /artifact specfuzz \
+    ./scripts/run_specfuzz.sh
 ```
 
+## Rebuilding the image / troubleshooting
+
+If you need to rebuild SpecFuzz by hand inside a running container
+(e.g. after changing something in `/specfuzz`), these are the exact
+steps baked into the Dockerfile — run them from `docker run --rm -it
+-v "$(pwd)/../.." :/artifact specfuzz bash`:
+
 ```bash
-# 1. Build + install SpecFuzz itself (per upstream README)
 cd /specfuzz
 export HONGG_SRC=/root/honggfuzz/src
 make
@@ -31,27 +43,18 @@ make install          # installs clang-sf / clang-sf++ to /usr/bin
 make install_tools     # installs analyzer to /usr/bin, patches + rebuilds
                         # honggfuzz in-place at $HONGG_SRC
 
-# 2. make install_tools rebuilds honggfuzz IN PLACE at $HONGG_SRC — it
-# does not reinstall the binary to /usr/bin. Point PATH at it (or symlink):
+# make install_tools rebuilds honggfuzz IN PLACE at $HONGG_SRC — it
+# does not reinstall the binary to /usr/bin. Point PATH at it:
 export PATH="/root/honggfuzz:$PATH"
-# or: ln -sf /root/honggfuzz/honggfuzz /usr/local/bin/honggfuzz
 which honggfuzz && honggfuzz --version   # sanity check it's the patched build
 
-# 3. scripts/run_specfuzz.sh calls `llvm-7.0.1-config`, but this
+# scripts/run_specfuzz.sh calls `llvm-7.0.1-config`, but this
 # Dockerfile's from-source LLVM install only produces `llvm-config`
 # (no version suffix). Symlink it so the script finds it:
 ln -sf /usr/local/bin/llvm-config /usr/local/bin/llvm-7.0.1-config
 
+# sanity checks
 clang-sf --version
 analyzer --help
 llvm-7.0.1-config --version
-```
-
-## Run
-
-From inside the container, from the artifact root:
-
-```bash
-cd /artifact
-./scripts/run_specfuzz.sh
 ```
